@@ -1,0 +1,57 @@
+Übersicht Trainingsläufe, Accuracy und Loss
+
+Modell 1: 20 Tage (vom 9.4.2024 bis zum 28.5.2024)
+Modell 2: 50 Tage (bis zum 8.8.2024)
+Modell 3: 67 Tage (bis zum 30.8.2024)
+Modell 4: 91 Tage (bis zum 29.11.2024)
+Modell 5: 83 Tage (bis zum 29.11.2024, wobei 8 spezifische Tage zwischen dem 2.9.2024 und 26.9.2024 nicht verwendet wurden)
+
+
+20 Hi
+Epoch 45/52 2471/2471 - 20s - 8ms/step - accuracy: 0.9986 - loss: 0.0054
+Epoch 46/52 2471/2471 - 21s - 9ms/step - accuracy: 0.9992 - loss: 0.0026
+Epoch 47/52 2471/2471 - 20s - 8ms/step - accuracy: 0.9999 - loss: 4.9524e-04
+Epoch 48/52 2471/2471 - 14s - 5ms/step - accuracy: 0.9986 - loss: 0.0060
+Epoch 49/52 2471/2471 - 21s - 9ms/step - accuracy: 0.9985 - loss: 0.0041
+Epoch 50/52 2471/2471 - 20s - 8ms/step - accuracy: 0.9999 - loss: 6.3617e-04
+Epoch 51/52 2471/2471 - 21s - 9ms/step - accuracy: 1.0000 - loss: 5.3631e-05
+Epoch 52/52 2471/2471 - 20s - 8ms/step - accuracy: 1.0000 - loss: 1.5501e-05
+
+
+83  Hi (a)
+Epoch 88/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9987 - loss: 0.0036
+Epoch 89/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9985 - loss: 0.0042
+Epoch 90/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9986 - loss: 0.0047
+Epoch 91/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9985 - loss: 0.0048
+Epoch 92/97 7831/7831 - 37s - 5ms/step - accuracy: 0.9989 - loss: 0.0031
+Epoch 93/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9980 - loss: 0.0065
+Epoch 94/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9987 - loss: 0.0042
+Epoch 95/97 7831/7831 - 37s - 5ms/step - accuracy: 0.9989 - loss: 0.0035
+Epoch 96/97 7831/7831 - 40s - 5ms/step - accuracy: 0.9987 - loss: 0.0044
+Epoch 97/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9986 - loss: 0.0040
+
+
+83  Hi (b)
+Epoch 90/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9985 - loss: 0.0045
+Epoch 91/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9987 - loss: 0.0042
+Epoch 92/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9990 - loss: 0.0027
+Epoch 93/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9989 - loss: 0.0038
+Epoch 94/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9990 - loss: 0.0028
+Epoch 95/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9983 - loss: 0.0059
+Epoch 96/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9985 - loss: 0.0044
+Epoch 97/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9988 - loss: 0.0040
+
+
+83  Lo (a)
+Epoch 90/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9986 - loss: 0.0050
+Epoch 91/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9987 - loss: 0.0040
+Epoch 92/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9989 - loss: 0.0031
+Epoch 93/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9989 - loss: 0.0032
+Epoch 94/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9980 - loss: 0.0060
+Epoch 95/97 7831/7831 - 37s - 5ms/step - accuracy: 0.9986 - loss: 0.0042
+Epoch 96/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9984 - loss: 0.0053
+Epoch 97/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9984 - loss: 0.0046
+
+
+
+

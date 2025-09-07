@@ -1,0 +1,98 @@
+Protokoll der Basisstrategie angewendet auf den 27.11.2024 in Test Series 2
+
+_prc_24_11_27Ext.csv
+##### HI 67
+-672 - -536 diff: 136
+-597 - -355 diff: 242
+-665 - -785 diff: -120
+-302 - -112 diff: 190
+-388 - 22 diff: 410
+4 von 5 : in 10 bloecken +5 punkte
+0.8 : praezision_beiPerformance 
+85.8 sumdiff in fdax punkten
+##### LO 67
+0 von 0 : in 10 bloecken +5 punkte
+0 : praezision_beiPerformance 
+0.0 sumdiff in fdax punkten
+##### HI 50
+-672 - -536 diff: 136
+-561 - -403 diff: 158
+-67 - -332 diff: -265
+2 von 3 : in 10 bloecken +5 punkte
+0.6666666666666666 : praezision_beiPerformance 
+2.9 sumdiff in fdax punkten
+##### LO 50
+-165 - -307 diff: 142
+-37 - 45 diff: -82
+112 - 260 diff: -148
+183 - 172 diff: 11
+0 - 208 diff: -208
+1 von 5 : in 10 bloecken +5 punkte
+0.2 : praezision_beiPerformance 
+-28.5 sumdiff in fdax punkten
+
+
+
+
+
+Protokoll der Limitstrategie angewendet auf den 27.11.2024 in Test Series 2
+
+_prc_24_11_27Ext.csv
+##### HI 67
+>>> stratidx 13 prc -672 limit -822
+idx 48 prc -239 limit -237
+-672 - -237 diff: 435
+>>> stratidx 78 prc -597 limit -647
+idx 92 prc -480 limit -401
+-597 - -401 diff: 196
+>>> stratidx 93 prc -665 limit -715
+idx 99 prc -745 limit -715
+-665 - -715 diff: -50
+>>> stratidx 131 prc -302 limit -352
+idx 139 prc -115 limit -112
+-302 - -112 diff: 190
+>>> stratidx 190 prc -388 limit -438
+idx 213 prc 157 limit 182
+-388 - 182 diff: 570
+=======================
+4 von 5 : im trade +5 punkte
+134.1 sumdiff in fdax punkten
+ 
+##### LO 67
+=======================
+0 von 0 : im trade +5 punkte
+0.0 sumdiff in fdax punkten
+ 
+##### HI 50
+>>> stratidx 13 prc -672 limit -822
+idx 48 prc -239 limit -237
+-672 - -237 diff: 435
+>>> stratidx 77 prc -561 limit -611
+idx 80 prc -620 limit -611
+-561 - -611 diff: -50
+>>> stratidx 182 prc -67 limit -117
+idx 187 prc -125 limit -99
+-67 - -99 diff: -32
+=======================
+1 von 3 : im trade +5 punkte
+35.3 sumdiff in fdax punkten
+ 
+##### LO 50
+>>> stratidx 59 prc -165 limit -15
+idx 82 prc -565 limit -570
+-165 - -570 diff: 405
+>>> stratidx 144 prc -37 limit 13
+idx 153 prc -53 limit -79
+-37 - -79 diff: 42
+>>> stratidx 164 prc 112 limit 162
+idx 168 prc 183 limit 162
+112 - 162 diff: -50
+>>> stratidx 167 prc 183 limit 233
+idx 169 prc 241 limit 233
+183 - 233 diff: -50
+>>> stratidx 199 prc 0 limit 50
+idx 205 prc 73 limit 50
+0 - 50 diff: -50
+=======================
+1 von 5 : im trade +5 punkte
+29.7 sumdiff in fdax punkten

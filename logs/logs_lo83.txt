@@ -1,461 +1,99 @@
-Übersicht Trainingsläufe, Accuracy und Loss
-
-Um die Robustheit der Modellleistung zu beurteilen und die Lernkurve in Abhängigkeit von der Trainingsdatenmenge zu untersuchen, wurden fünf verschiedene Modelle für sowohl High- als auch Low-Trigger trainiert. Die Modelle unterscheiden sich in der Anzahl der Handelstage, die für das Training verwendet wurden:
-Modell 1: 20 Tage (vom 9.4.2024 bis zum 28.5.2024)
-Modell 2: 50 Tage (bis zum 8.8.2024)
-Modell 3: 67 Tage (bis zum 30.8.2024)
-Modell 4: 91 Tage (bis zum 29.11.2024)
-Modell 5: 83 Tage (bis zum 29.11.2024, wobei 8 spezifische Tage zwischen dem 2.9.2024 und 26.9.2024 nicht verwendet wurden)
-Die Accuracy und der Loss  der Trainingsläufe werden in diesem Abschnitten anhand ausgewählter Protokolle dargestellt. Damit wird gezeigt, wie sich die accuracy und der loss mit der Größe des Trainingsdatensatzes entwickeln. Eine zusammenfassende Tabelle am Ende dieses Kapitels wird die wichtigsten Kennzahlen aller Trainingsläufe gegenüberstellen. Es ist zu erwarten, dass die Werte für accuracy und loss mit zunehmender Trainingsdatenmenge schwanken oder sich sogar verschlechtern können, da das Modell nun mit einer größeren Vielfalt an Daten umgehen muss.
-Hier eine Auswahl von Protokollen:
-
-PROTOKOLLE
-
-Und eine Tabelle mit einer Übersicht der erreichten Accuracy und Loss:
-
-TABELLE
-
-Als nächstes werden die Vorhersageergebnisse für den 9.2.2024 und den 11.4.2024 anhand der Prognosegrafiken vom 20-Tage Model und dem 83-TageModell dargestellt. Beide Tage gehören zu den Trainingsdaten und es ist zu erwarten, dass bei der hohen accuracy alle trigger getroffen werden. Und genau das kann man in den Grafiken gut erkennen.
-Wobei bei dem 20 Tage Model  alle Trigger mit fast 100% genau getroffen wurden, wurden bei dem 83 Tage Modell auch weitere Muster mit geringer Up-Wahrscheinlichkeit gefunden. Dies ist durch kleinere zusätzliche blaue Balken zu erkennen. Diese beiden Tage dienen nur als Beispiel, die anderen Tage sehen ähnlich aus. 
-
-GRAFIKEN 
-
-Diese sehr hohe Accuracy verdeutlicht aber auch wie wichtig die vorgegebnen Trigger sind, denn die Muster von schlecht definierten Triggern würden auch gefunden werden.
-Die Tagesverläufe mit mehr oder weniger großen Bewegungen und Ausschlägen, verdeutlichen auch die herausforderung bei der definition der trigger.
-
-
-83  Hi (a)
-Epoch 88/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9987 - loss: 0.0036
-Epoch 89/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9985 - loss: 0.0042
-Epoch 90/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9986 - loss: 0.0047
-Epoch 91/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9985 - loss: 0.0048
-Epoch 92/97
-7831/7831 - 37s - 5ms/step - accuracy: 0.9989 - loss: 0.0031
-Epoch 93/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9980 - loss: 0.0065
-Epoch 94/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9987 - loss: 0.0042
-Epoch 95/97
-7831/7831 - 37s - 5ms/step - accuracy: 0.9989 - loss: 0.0035
-Epoch 96/97
-7831/7831 - 40s - 5ms/step - accuracy: 0.9987 - loss: 0.0044
-Epoch 97/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9986 - loss: 0.0040
-
-83  Hi (b)
-Epoch 90/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9985 - loss: 0.0045
-Epoch 91/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9987 - loss: 0.0042
-Epoch 92/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9990 - loss: 0.0027
-Epoch 93/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9989 - loss: 0.0038
-Epoch 94/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9990 - loss: 0.0028
-Epoch 95/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9983 - loss: 0.0059
-Epoch 96/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9985 - loss: 0.0044
-Epoch 97/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9988 - loss: 0.0040
-
-83  Lo (a)
-Epoch 90/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9986 - loss: 0.0050
-Epoch 91/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9987 - loss: 0.0040
-Epoch 92/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9989 - loss: 0.0031
-Epoch 93/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9989 - loss: 0.0032
-Epoch 94/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9980 - loss: 0.0060
-Epoch 95/97
-7831/7831 - 37s - 5ms/step - accuracy: 0.9986 - loss: 0.0042
-Epoch 96/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9984 - loss: 0.0053
-Epoch 97/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9984 - loss: 0.0046
-
-
-
-91 (hi)
-HIHIHIHIIHII########################################################
-
-Epoch 1/89
-/usr/local/lib/python3.11/dist-packages/keras/src/backend/tensorflow/nn.py:780: UserWarning: "`binary_crossentropy` received `from_logits=True`, but the `output` argument was produced by a Sigmoid activation and thus does not represent logits. Was this intended?
-  output, from_logits = _get_logits(
-8292/8292 - 48s - 6ms/step - accuracy: 0.9812 - loss: 0.0718
-Epoch 2/89
-8292/8292 - 80s - 10ms/step - accuracy: 0.9814 - loss: 0.0619
-Epoch 3/89
-8292/8292 - 45s - 5ms/step - accuracy: 0.9814 - loss: 0.0599
-Epoch 4/89
-8292/8292 - 81s - 10ms/step - accuracy: 0.9814 - loss: 0.0581
-Epoch 5/89
-8292/8292 - 44s - 5ms/step - accuracy: 0.9814 - loss: 0.0562
-Epoch 6/89
-8292/8292 - 82s - 10ms/step - accuracy: 0.9814 - loss: 0.0540
-Epoch 7/89
-8292/8292 - 45s - 5ms/step - accuracy: 0.9816 - loss: 0.0516
-Epoch 8/89
-8292/8292 - 82s - 10ms/step - accuracy: 0.9813 - loss: 0.0488
-Epoch 9/89
-8292/8292 - 82s - 10ms/step - accuracy: 0.9817 - loss: 0.0460
-Epoch 10/89
-8292/8292 - 82s - 10ms/step - accuracy: 0.9821 - loss: 0.0428
-Epoch 11/89
-8292/8292 - 82s - 10ms/step - accuracy: 0.9830 - loss: 0.0410
-Epoch 12/89
-8292/8292 - 82s - 10ms/step - accuracy: 0.9839 - loss: 0.0378
-Epoch 13/89
-8292/8292 - 82s - 10ms/step - accuracy: 0.9850 - loss: 0.0354
-Epoch 14/89
-8292/8292 - 82s - 10ms/step - accuracy: 0.9863 - loss: 0.0335
-Epoch 15/89
-8292/8292 - 82s - 10ms/step - accuracy: 0.9869 - loss: 0.0306
-Epoch 16/89
-8292/8292 - 82s - 10ms/step - accuracy: 0.9881 - loss: 0.0286
-Epoch 17/89
-8292/8292 - 82s - 10ms/step - accuracy: 0.9888 - loss: 0.0260
-Epoch 18/89
-8292/8292 - 44s - 5ms/step - accuracy: 0.9897 - loss: 0.0240
-Epoch 19/89
-8292/8292 - 82s - 10ms/step - accuracy: 0.9910 - loss: 0.0220
-Epoch 20/89
-8292/8292 - 81s - 10ms/step - accuracy: 0.9921 - loss: 0.0200
-Epoch 21/89
-8292/8292 - 44s - 5ms/step - accuracy: 0.9926 - loss: 0.0187
-Epoch 22/89
-8292/8292 - 82s - 10ms/step - accuracy: 0.9929 - loss: 0.0173
-Epoch 23/89
-8292/8292 - 82s - 10ms/step - accuracy: 0.9935 - loss: 0.0162
-Epoch 24/89
-8292/8292 - 81s - 10ms/step - accuracy: 0.9939 - loss: 0.0151
-Epoch 25/89
-8292/8292 - 83s - 10ms/step - accuracy: 0.9950 - loss: 0.0128
-Epoch 26/89
-8292/8292 - 82s - 10ms/step - accuracy: 0.9948 - loss: 0.0133
-Epoch 27/89
-8292/8292 - 82s - 10ms/step - accuracy: 0.9955 - loss: 0.0118
-Epoch 28/89
-8292/8292 - 82s - 10ms/step - accuracy: 0.9951 - loss: 0.0132
-Epoch 29/89
-8292/8292 - 82s - 10ms/step - accuracy: 0.9962 - loss: 0.0106
-Epoch 30/89
-8292/8292 - 82s - 10ms/step - accuracy: 0.9963 - loss: 0.0104
-Epoch 31/89
-8292/8292 - 83s - 10ms/step - accuracy: 0.9965 - loss: 0.0098
-Epoch 32/89
-8292/8292 - 82s - 10ms/step - accuracy: 0.9967 - loss: 0.0093
-Epoch 33/89
-8292/8292 - 81s - 10ms/step - accuracy: 0.9966 - loss: 0.0095
-Epoch 34/89
-8292/8292 - 82s - 10ms/step - accuracy: 0.9967 - loss: 0.0088
-Epoch 35/89
-8292/8292 - 82s - 10ms/step - accuracy: 0.9970 - loss: 0.0087
-Epoch 36/89
-8292/8292 - 83s - 10ms/step - accuracy: 0.9968 - loss: 0.0089
-Epoch 37/89
-8292/8292 - 81s - 10ms/step - accuracy: 0.9973 - loss: 0.0079
-Epoch 38/89
-8292/8292 - 45s - 5ms/step - accuracy: 0.9972 - loss: 0.0077
-Epoch 39/89
-8292/8292 - 82s - 10ms/step - accuracy: 0.9974 - loss: 0.0080
-Epoch 40/89
-8292/8292 - 82s - 10ms/step - accuracy: 0.9978 - loss: 0.0063
-Epoch 41/89
-8292/8292 - 82s - 10ms/step - accuracy: 0.9973 - loss: 0.0081
-Epoch 42/89
-8292/8292 - 82s - 10ms/step - accuracy: 0.9978 - loss: 0.0067
-Epoch 43/89
-8292/8292 - 82s - 10ms/step - accuracy: 0.9976 - loss: 0.0070
-Epoch 44/89
-8292/8292 - 44s - 5ms/step - accuracy: 0.9974 - loss: 0.0076
-Epoch 45/89
-8292/8292 - 82s - 10ms/step - accuracy: 0.9977 - loss: 0.0068
-Epoch 46/89
-8292/8292 - 82s - 10ms/step - accuracy: 0.9979 - loss: 0.0064
-Epoch 47/89
-8292/8292 - 82s - 10ms/step - accuracy: 0.9978 - loss: 0.0066
-Epoch 48/89
-8292/8292 - 82s - 10ms/step - accuracy: 0.9976 - loss: 0.0073
-Epoch 49/89
-8292/8292 - 82s - 10ms/step - accuracy: 0.9983 - loss: 0.0055
-Epoch 50/89
-8292/8292 - 82s - 10ms/step - accuracy: 0.9980 - loss: 0.0053
-Epoch 51/89
-8292/8292 - 82s - 10ms/step - accuracy: 0.9976 - loss: 0.0069
-Epoch 52/89
-8292/8292 - 82s - 10ms/step - accuracy: 0.9980 - loss: 0.0059
-Epoch 53/89
-8292/8292 - 82s - 10ms/step - accuracy: 0.9981 - loss: 0.0052
-Epoch 54/89
-8292/8292 - 82s - 10ms/step - accuracy: 0.9981 - loss: 0.0051
-Epoch 55/89
-8292/8292 - 82s - 10ms/step - accuracy: 0.9981 - loss: 0.0052
-Epoch 56/89
-8292/8292 - 44s - 5ms/step - accuracy: 0.9979 - loss: 0.0059
-Epoch 57/89
-8292/8292 - 82s - 10ms/step - accuracy: 0.9982 - loss: 0.0052
-Epoch 58/89
-8292/8292 - 82s - 10ms/step - accuracy: 0.9973 - loss: 0.0077
-Epoch 59/89
-8292/8292 - 82s - 10ms/step - accuracy: 0.9981 - loss: 0.0053
-Epoch 60/89
-8292/8292 - 82s - 10ms/step - accuracy: 0.9980 - loss: 0.0065
-Epoch 61/89
-8292/8292 - 82s - 10ms/step - accuracy: 0.9977 - loss: 0.0062
-Epoch 62/89
-8292/8292 - 82s - 10ms/step - accuracy: 0.9983 - loss: 0.0056
-Epoch 63/89
-8292/8292 - 82s - 10ms/step - accuracy: 0.9977 - loss: 0.0060
-Epoch 64/89
-8292/8292 - 82s - 10ms/step - accuracy: 0.9984 - loss: 0.0050
-Epoch 65/89
-8292/8292 - 83s - 10ms/step - accuracy: 0.9985 - loss: 0.0044
-Epoch 66/89
-8292/8292 - 80s - 10ms/step - accuracy: 0.9981 - loss: 0.0060
-Epoch 67/89
-8292/8292 - 44s - 5ms/step - accuracy: 0.9986 - loss: 0.0044
-Epoch 68/89
-8292/8292 - 82s - 10ms/step - accuracy: 0.9988 - loss: 0.0039
-Epoch 69/89
-8292/8292 - 44s - 5ms/step - accuracy: 0.9982 - loss: 0.0060
-Epoch 70/89
-8292/8292 - 82s - 10ms/step - accuracy: 0.9985 - loss: 0.0039
-Epoch 71/89
-8292/8292 - 82s - 10ms/step - accuracy: 0.9980 - loss: 0.0057
-Epoch 72/89
-8292/8292 - 81s - 10ms/step - accuracy: 0.9978 - loss: 0.0078
-Epoch 73/89
-8292/8292 - 82s - 10ms/step - accuracy: 0.9978 - loss: 0.0062
-Epoch 74/89
-8292/8292 - 44s - 5ms/step - accuracy: 0.9989 - loss: 0.0030
-Epoch 75/89
-8292/8292 - 82s - 10ms/step - accuracy: 0.9982 - loss: 0.0051
-Epoch 76/89
-8292/8292 - 82s - 10ms/step - accuracy: 0.9980 - loss: 0.0056
-Epoch 77/89
-8292/8292 - 44s - 5ms/step - accuracy: 0.9983 - loss: 0.0051
-Epoch 78/89
-8292/8292 - 82s - 10ms/step - accuracy: 0.9980 - loss: 0.0060
-Epoch 79/89
-8292/8292 - 44s - 5ms/step - accuracy: 0.9985 - loss: 0.0044
-Epoch 80/89
-8292/8292 - 44s - 5ms/step - accuracy: 0.9986 - loss: 0.0038
-Epoch 81/89
-8292/8292 - 82s - 10ms/step - accuracy: 0.9983 - loss: 0.0049
-Epoch 82/89
-8292/8292 - 81s - 10ms/step - accuracy: 0.9989 - loss: 0.0039
-Epoch 83/89
-8292/8292 - 82s - 10ms/step - accuracy: 0.9986 - loss: 0.0043
-Epoch 84/89
-8292/8292 - 84s - 10ms/step - accuracy: 0.9983 - loss: 0.0047
-Epoch 85/89
-8292/8292 - 85s - 10ms/step - accuracy: 0.9986 - loss: 0.0045
-Epoch 86/89
-8292/8292 - 82s - 10ms/step - accuracy: 0.9984 - loss: 0.0045
-Epoch 87/89
-8292/8292 - 48s - 6ms/step - accuracy: 0.9986 - loss: 0.0034
-Epoch 88/89
-8292/8292 - 81s - 10ms/step - accuracy: 0.9988 - loss: 0.0039
-Epoch 89/89
-8292/8292 - 78s - 9ms/step - accuracy: 0.9993 - loss: 0.0025
-
-
 83 LO LO
 LOLOOLO
-Epoch 1/97
-/usr/local/lib/python3.11/dist-packages/keras/src/backend/tensorflow/nn.py:780: UserWarning: "`binary_crossentropy` received `from_logits=True`, but the `output` argument was produced by a Sigmoid activation and thus does not represent logits. Was this intended?
-  output, from_logits = _get_logits(
-7831/7831 - 39s - 5ms/step - accuracy: 0.9807 - loss: 0.0752
-Epoch 2/97
-7831/7831 - 40s - 5ms/step - accuracy: 0.9813 - loss: 0.0658
-Epoch 3/97
-7831/7831 - 37s - 5ms/step - accuracy: 0.9813 - loss: 0.0635
-Epoch 4/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9813 - loss: 0.0615
-Epoch 5/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9813 - loss: 0.0589
-Epoch 6/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9813 - loss: 0.0566
-Epoch 7/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9813 - loss: 0.0535
-Epoch 8/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9813 - loss: 0.0504
-Epoch 9/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9816 - loss: 0.0467
-Epoch 10/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9829 - loss: 0.0435
-Epoch 11/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9836 - loss: 0.0413
-Epoch 12/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9853 - loss: 0.0380
-Epoch 13/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9854 - loss: 0.0355
-Epoch 14/97
-7831/7831 - 37s - 5ms/step - accuracy: 0.9866 - loss: 0.0315
-Epoch 15/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9886 - loss: 0.0290
-Epoch 16/97
-7831/7831 - 37s - 5ms/step - accuracy: 0.9890 - loss: 0.0274
-Epoch 17/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9900 - loss: 0.0240
-Epoch 18/97
-7831/7831 - 37s - 5ms/step - accuracy: 0.9917 - loss: 0.0221
-Epoch 19/97
-7831/7831 - 37s - 5ms/step - accuracy: 0.9917 - loss: 0.0205
-Epoch 20/97
-7831/7831 - 37s - 5ms/step - accuracy: 0.9929 - loss: 0.0182
-Epoch 21/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9929 - loss: 0.0172
-Epoch 22/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9946 - loss: 0.0152
-Epoch 23/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9939 - loss: 0.0158
-Epoch 24/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9950 - loss: 0.0140
-Epoch 25/97
-7831/7831 - 37s - 5ms/step - accuracy: 0.9954 - loss: 0.0125
-Epoch 26/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9954 - loss: 0.0122
-Epoch 27/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9961 - loss: 0.0108
-Epoch 28/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9959 - loss: 0.0103
-Epoch 29/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9967 - loss: 0.0101
-Epoch 30/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9967 - loss: 0.0097
-Epoch 31/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9967 - loss: 0.0100
-Epoch 32/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9970 - loss: 0.0090
-Epoch 33/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9963 - loss: 0.0102
-Epoch 34/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9971 - loss: 0.0074
-Epoch 35/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9968 - loss: 0.0097
-Epoch 36/97
-7831/7831 - 36s - 5ms/step - accuracy: 0.9970 - loss: 0.0084
-Epoch 37/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9975 - loss: 0.0073
-Epoch 38/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9968 - loss: 0.0088
-Epoch 39/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9977 - loss: 0.0066
-Epoch 40/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9977 - loss: 0.0070
-Epoch 41/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9969 - loss: 0.0089
-Epoch 42/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9972 - loss: 0.0087
-Epoch 43/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9975 - loss: 0.0076
-Epoch 44/97
-7831/7831 - 37s - 5ms/step - accuracy: 0.9980 - loss: 0.0057
-Epoch 45/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9974 - loss: 0.0087
-Epoch 46/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9976 - loss: 0.0060
-Epoch 47/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9974 - loss: 0.0086
-Epoch 48/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9981 - loss: 0.0057
-Epoch 49/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9978 - loss: 0.0070
-Epoch 50/97
-7831/7831 - 36s - 5ms/step - accuracy: 0.9982 - loss: 0.0055
-Epoch 51/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9977 - loss: 0.0061
-Epoch 52/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9978 - loss: 0.0065
-Epoch 53/97
-7831/7831 - 36s - 5ms/step - accuracy: 0.9980 - loss: 0.0062
-Epoch 54/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9977 - loss: 0.0064
-Epoch 55/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9981 - loss: 0.0053
-Epoch 56/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9977 - loss: 0.0070
-Epoch 57/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9987 - loss: 0.0039
-Epoch 58/97
-7831/7831 - 36s - 5ms/step - accuracy: 0.9976 - loss: 0.0073
-Epoch 59/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9986 - loss: 0.0044
-Epoch 60/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9986 - loss: 0.0043
-Epoch 61/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9979 - loss: 0.0053
-Epoch 62/97
-7831/7831 - 36s - 5ms/step - accuracy: 0.9979 - loss: 0.0062
-Epoch 63/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9985 - loss: 0.0053
-Epoch 64/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9980 - loss: 0.0060
-Epoch 65/97
-7831/7831 - 36s - 5ms/step - accuracy: 0.9983 - loss: 0.0060
-Epoch 66/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9985 - loss: 0.0052
-Epoch 67/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9984 - loss: 0.0044
-Epoch 68/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9985 - loss: 0.0049
-Epoch 69/97
-7831/7831 - 36s - 5ms/step - accuracy: 0.9981 - loss: 0.0047
-Epoch 70/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9982 - loss: 0.0059
-Epoch 71/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9985 - loss: 0.0047
-Epoch 72/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9983 - loss: 0.0052
-Epoch 73/97
-7831/7831 - 36s - 5ms/step - accuracy: 0.9981 - loss: 0.0063
-Epoch 74/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9980 - loss: 0.0060
-Epoch 75/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9982 - loss: 0.0054
-Epoch 76/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9990 - loss: 0.0032
-Epoch 77/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9979 - loss: 0.0058
-Epoch 78/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9989 - loss: 0.0042
-Epoch 79/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9984 - loss: 0.0055
-Epoch 80/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9986 - loss: 0.0043
-Epoch 81/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9980 - loss: 0.0069
-Epoch 82/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9983 - loss: 0.0052
-Epoch 83/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9984 - loss: 0.0047
-Epoch 84/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9984 - loss: 0.0048
-Epoch 85/97
-7831/7831 - 36s - 5ms/step - accuracy: 0.9988 - loss: 0.0034
-Epoch 86/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9984 - loss: 0.0045
-Epoch 87/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9989 - loss: 0.0042
-Epoch 88/97
-7831/7831 - 41s - 5ms/step - accuracy: 0.9982 - loss: 0.0049
-Epoch 89/97 - 41s - 5ms/step - accuracy: 0.9982 - loss: 0.0047
-Epoch 90/97 - 41s - 5ms/step - accuracy: 0.9986 - loss: 0.0050
-Epoch 91/97 - 41s - 5ms/step - accuracy: 0.9987 - loss: 0.0040
-Epoch 92/97 - 41s - 5ms/step - accuracy: 0.9989 - loss: 0.0031
-Epoch 93/97 - 41s - 5ms/step - accuracy: 0.9989 - loss: 0.0032
-Epoch 94/97 - 41s - 5ms/step - accuracy: 0.9980 - loss: 0.0060
-Epoch 95/97 - 37s - 5ms/step - accuracy: 0.9986 - loss: 0.0042
-Epoch 96/97 - 41s - 5ms/step - accuracy: 0.9984 - loss: 0.0053
-Epoch 97/97 - 41s - 5ms/step - accuracy: 0.9984 - loss: 0.0046
-<keras.src.callbacks.history.History at 0x79d597f0cdd0>
+Epoch 1/97  7831/7831 - 39s - 5ms/step - accuracy: 0.9807 - loss: 0.0752
+Epoch 2/97  7831/7831 - 40s - 5ms/step - accuracy: 0.9813 - loss: 0.0658
+Epoch 3/97  7831/7831 - 37s - 5ms/step - accuracy: 0.9813 - loss: 0.0635
+Epoch 4/97  7831/7831 - 41s - 5ms/step - accuracy: 0.9813 - loss: 0.0615
+Epoch 5/97  7831/7831 - 41s - 5ms/step - accuracy: 0.9813 - loss: 0.0589
+Epoch 6/97  7831/7831 - 41s - 5ms/step - accuracy: 0.9813 - loss: 0.0566
+Epoch 7/97  7831/7831 - 41s - 5ms/step - accuracy: 0.9813 - loss: 0.0535
+Epoch 8/97  7831/7831 - 41s - 5ms/step - accuracy: 0.9813 - loss: 0.0504
+Epoch 9/97  7831/7831 - 41s - 5ms/step - accuracy: 0.9816 - loss: 0.0467
+Epoch 10/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9829 - loss: 0.0435
+Epoch 11/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9836 - loss: 0.0413
+Epoch 12/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9853 - loss: 0.0380
+Epoch 13/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9854 - loss: 0.0355
+Epoch 14/97 7831/7831 - 37s - 5ms/step - accuracy: 0.9866 - loss: 0.0315
+Epoch 15/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9886 - loss: 0.0290
+Epoch 16/97 7831/7831 - 37s - 5ms/step - accuracy: 0.9890 - loss: 0.0274
+Epoch 17/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9900 - loss: 0.0240
+Epoch 18/97 7831/7831 - 37s - 5ms/step - accuracy: 0.9917 - loss: 0.0221
+Epoch 19/97 7831/7831 - 37s - 5ms/step - accuracy: 0.9917 - loss: 0.0205
+Epoch 20/97 7831/7831 - 37s - 5ms/step - accuracy: 0.9929 - loss: 0.0182
+Epoch 21/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9929 - loss: 0.0172
+Epoch 22/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9946 - loss: 0.0152
+Epoch 23/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9939 - loss: 0.0158
+Epoch 24/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9950 - loss: 0.0140
+Epoch 25/97 7831/7831 - 37s - 5ms/step - accuracy: 0.9954 - loss: 0.0125
+Epoch 26/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9954 - loss: 0.0122
+Epoch 27/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9961 - loss: 0.0108
+Epoch 28/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9959 - loss: 0.0103
+Epoch 29/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9967 - loss: 0.0101
+Epoch 30/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9967 - loss: 0.0097
+Epoch 31/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9967 - loss: 0.0100
+Epoch 32/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9970 - loss: 0.0090
+Epoch 33/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9963 - loss: 0.0102
+Epoch 34/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9971 - loss: 0.0074
+Epoch 35/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9968 - loss: 0.0097
+Epoch 36/97 7831/7831 - 36s - 5ms/step - accuracy: 0.9970 - loss: 0.0084
+Epoch 37/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9975 - loss: 0.0073
+Epoch 38/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9968 - loss: 0.0088
+Epoch 39/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9977 - loss: 0.0066
+Epoch 40/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9977 - loss: 0.0070
+Epoch 41/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9969 - loss: 0.0089
+Epoch 42/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9972 - loss: 0.0087
+Epoch 43/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9975 - loss: 0.0076
+Epoch 44/97 7831/7831 - 37s - 5ms/step - accuracy: 0.9980 - loss: 0.0057
+Epoch 45/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9974 - loss: 0.0087
+Epoch 46/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9976 - loss: 0.0060
+Epoch 47/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9974 - loss: 0.0086
+Epoch 48/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9981 - loss: 0.0057
+Epoch 49/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9978 - loss: 0.0070
+Epoch 50/97 7831/7831 - 36s - 5ms/step - accuracy: 0.9982 - loss: 0.0055
+Epoch 51/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9977 - loss: 0.0061
+Epoch 52/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9978 - loss: 0.0065
+Epoch 53/97 7831/7831 - 36s - 5ms/step - accuracy: 0.9980 - loss: 0.0062
+Epoch 54/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9977 - loss: 0.0064
+Epoch 55/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9981 - loss: 0.0053
+Epoch 56/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9977 - loss: 0.0070
+Epoch 57/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9987 - loss: 0.0039
+Epoch 58/97 7831/7831 - 36s - 5ms/step - accuracy: 0.9976 - loss: 0.0073
+Epoch 59/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9986 - loss: 0.0044
+Epoch 60/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9986 - loss: 0.0043
+Epoch 61/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9979 - loss: 0.0053
+Epoch 62/97 7831/7831 - 36s - 5ms/step - accuracy: 0.9979 - loss: 0.0062
+Epoch 63/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9985 - loss: 0.0053
+Epoch 64/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9980 - loss: 0.0060
+Epoch 65/97 7831/7831 - 36s - 5ms/step - accuracy: 0.9983 - loss: 0.0060
+Epoch 66/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9985 - loss: 0.0052
+Epoch 67/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9984 - loss: 0.0044
+Epoch 68/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9985 - loss: 0.0049
+Epoch 69/97 7831/7831 - 36s - 5ms/step - accuracy: 0.9981 - loss: 0.0047
+Epoch 70/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9982 - loss: 0.0059
+Epoch 71/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9985 - loss: 0.0047
+Epoch 72/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9983 - loss: 0.0052
+Epoch 73/97 7831/7831 - 36s - 5ms/step - accuracy: 0.9981 - loss: 0.0063
+Epoch 74/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9980 - loss: 0.0060
+Epoch 75/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9982 - loss: 0.0054
+Epoch 76/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9990 - loss: 0.0032
+Epoch 77/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9979 - loss: 0.0058
+Epoch 78/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9989 - loss: 0.0042
+Epoch 79/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9984 - loss: 0.0055
+Epoch 80/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9986 - loss: 0.0043
+Epoch 81/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9980 - loss: 0.0069
+Epoch 82/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9983 - loss: 0.0052
+Epoch 83/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9984 - loss: 0.0047
+Epoch 84/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9984 - loss: 0.0048
+Epoch 85/97 7831/7831 - 36s - 5ms/step - accuracy: 0.9988 - loss: 0.0034
+Epoch 86/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9984 - loss: 0.0045
+Epoch 87/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9989 - loss: 0.0042
+Epoch 88/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9982 - loss: 0.0049
+Epoch 89/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9982 - loss: 0.0047
+Epoch 90/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9986 - loss: 0.0050
+Epoch 91/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9987 - loss: 0.0040
+Epoch 92/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9989 - loss: 0.0031
+Epoch 93/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9989 - loss: 0.0032
+Epoch 94/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9980 - loss: 0.0060
+Epoch 95/97 7831/7831 - 37s - 5ms/step - accuracy: 0.9986 - loss: 0.0042
+Epoch 96/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9984 - loss: 0.0053
+Epoch 97/97 7831/7831 - 41s - 5ms/step - accuracy: 0.9984 - loss: 0.0046

@@ -1,4 +1,4 @@
-#Columsn der Kennzahlenliste als Basis der Featureliste#
+*Column of the key figures list as the basis of the feature list*
 
 | Column | Description |
 | ----- | ----- |

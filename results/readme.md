@@ -29,3 +29,5 @@ The second, more extensive test series covers 19 trading days from October 18, 2
 #### **Backtesting Performance: Limit Strategy***
 
 **Analysis:** The Limit Strategy again proved highly effective, substantially increasing the profitability for all models. The HI 67 model achieved the highest total profit with 1119,3 points, with 450 point distance to the next model. The 67-day models generated higher returns with the Limit Strategy, suggesting their higher number of initiated trades created more opportunities for the risk management rules to generate profit. The Precision of Performance was comparable across all models in this scenario.
+
+![Rsults 1](jpgs/a_basis_50.jpg)

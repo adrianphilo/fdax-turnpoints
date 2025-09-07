@@ -31,14 +31,19 @@ The second, more extensive test series covers 19 trading days from October 18, 2
 
 Results: metrics 83 days modell\
 ![Results: metrics 83 days modell](jpgs/a_metric_83.jpg)
+
 Results: metrics 50 days modell\
 ![Results: metrics 50 days modell](jpgs/a_metric_50.jpg)
+
 Results: base szenarion 83 days modell\
 ![Results: base szenarion 83 days modell](jpgs/a_basis_83.jpg)
+
 Results: base szenarion 50 days modell\
 ![Results: base szenarion 50 days modell](jpgs/a_basis_50.jpg)
+
 Results: limit szenarion 83 days modell\
 ![Results: limit szenarion 83 days modell](jpgs/a_limit_83.jpg)
+
 Results: limit szenarion 50 days modell\
 ![Results: limit szenarion 50 days modell](jpgs/a_limit_50.jpg)
 
@@ -46,14 +51,19 @@ Results: limit szenarion 50 days modell\
 
 Results: metrics 67 days modell\
 ![Results: metrics 67 days modell](jpgs/b_metric_67.jpg)
+
 Results: metrics 50 days modell\
 ![Results: metrics 50 days modell](jpgs/b_metric_50.jpg)
+
 Results: base szenarion 67 days modell\
 ![Results: base szenarion 67 days modell](jpgs/b_basis_67.jpg)
+
 Results: base szenarion 50 days modell\
 ![Results: base szenarion 50 days modell](jpgs/b_basis_50.jpg)
+
 Results: limit szenarion 67 days modell\
 ![Results: limit szenarion 67 days modell](jpgs/b_limit_67.jpg)
+
 Results: limit szenarion 50 days modell\
 ![Results: limit szenarion 50 days modell](jpgs/b_limit_50.jpg)
 

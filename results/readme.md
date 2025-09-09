@@ -4,6 +4,7 @@ The details of the test runs are located in the individual subdirectories.
 ### **Overview of Backtesting Performance: Limit Strategy**
 As a short introduction, the overall result of the limit strategy is presented.
 The Limit Strategy introduces risk management rules (e.g., stop-loss and trailing stops) to the trades initiated by the model's triggers. A "hit" is recorded if a predicted trigger results in a profit of more than 5 basis points.
+This series compares models trained on 83 and 50 days of data.
 
 #### **Test Series 1: September 2024 Period**
 
@@ -18,7 +19,8 @@ The first test series covers 8 trading days from September September 2, 2024, to
 
 #### **Test Series 2: October-November 2024 Period**
 
-The second, more extensive test series covers 19 trading days from October 18, 2024, to November 27, 2024. This series compares models trained on 67 and 50 days of data.
+The second, more extensive test series covers 19 trading days from October 18, 2024, to November 27, 2024. 
+This series compares models trained on 67 and 50 days of data.
 
 | Model | Total Trades | Successful Trades (Hits) | Precision of Performance | Total Profit/Loss (Points) |
 | ----- | ----- | ----- | ----- | ----- |

@@ -1,4 +1,4 @@
-In this directory contains the results as sheets and screenshots.
+This directory contains the results as sheets and screenshots.
 The details of the test runs are located in the individual subdirectories.
 
 ### **Overview of Backtesting Performance: Limit Strategy**

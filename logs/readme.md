@@ -1,4 +1,4 @@
-In this directory some logs of the training processes and the backtests are stored.
+In this directory contains some logs of the training processes and the backtests.
 
 #### [Contains excerpts from logs of several different training runs. In particular, it shows the high accuracy and low loss rate reached.](logs_example.txt)
 

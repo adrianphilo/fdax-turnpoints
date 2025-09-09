@@ -1,4 +1,4 @@
-In this directory the important Colab Notebooks  are stored.
+In this directory contains the important Colab Notebooks.
 
 #### [Notebook for Datapreprocessing](2ml_cnvTrd2Score_ml.ipynb)
 

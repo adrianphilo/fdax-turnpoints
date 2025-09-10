@@ -1,4 +1,4 @@
-## Pattern Recognition and Trading Strategies in FDAX using LSTM Deep Learning
+## FDAX Turnpoints - Pattern Recognition and Trading Strategies in FDAX using LSTM Deep Learning
 
 This repository contains source code, results, and analyses conducted as part of a thesis on predicting turning points in FDAX trading.
 
@@ -14,17 +14,35 @@ Tests on unseen data confirm that a reliable prediction of turning points on "no
 The work demonstrates that simple trading strategies can yield positive results.
 
 
-### Contents
-notebooks/: Jupyter notebooks that document the entire process from data preparation to model training.
+### Contents of the Subdirectories
 
-Data_Preprocessing.ipynb: Scripts for processing raw data into standardized blocks and features.
+#### [results: contains the results of the backtesting test series](results)
 
-LSTM_Model_Training.ipynb: Code for the model architecture, training, and evaluation.
+Results overview of the limit strategie with the 63 days modwl
 
-results/: Directories and files containing the modeling results.
+| Model | Total Trades | Successful Trades (Hits) | Precision of Performance | Total Profit/Loss (Points) |
+| ----- | ----- | ----- | ----- | ----- |
+| **HI 67** | 107 | 48 | 0.449 | 1119,3 |
+| **LO 67** | 70 | 37 | 0.529 | 669,2 |
 
-sheets/: Tables with performance metrics (e.g., Precision, Recall, F1-Score).
+#### [charts: Graphs for visualizing model predictions and backtesting results](charts)
 
-charts/: Graphs for visualizing model predictions and backtesting results.
+As an example the prediciton chart and the limit strategie results of 83 days modell (first chart) and 50 days model (second chart) on September 24, 2024 is shown:\
+Limit  , HI 83 , precision : 0,667 , sum_pl ; 134,9, max_pl : 72,9 : min_pl , -5,0\
+Limit  , LO 83 , precision : 0,800 , sum_pl : 63,1 , max_pl : 19,3 , min_pl : 0,0\
+![Prediciton chart 83 days modell](charts/testseries_1/0924/plt_24_09_24_d83a.png)
 
-logs/: Training logs documenting the progression of accuracy and loss.
+
+#### [notebooks: Colab Jupyter notebooks for data preparation, training and backtesting with charts output](notebooks)
+
+#### [logs: Training logs documenting the progression of accuracy and loss.](logs)
+
+#### [data_example: ](data_example)
+
+#### [testseries_1: In this subdirectory the charts of the prediction results on the test series 1 are placed](testseries_1)
+
+As an example the prediciton chart and the limit strategie results of 83 days modell (first chart) and 50 days model (second chart) on September 24, 2024 is shown:\
+Limit  , HI 83 , precision : 0,667 , sum_pl ; 134,9, max_pl : 72,9 : min_pl , -5,0\
+Limit  , LO 83 , precision : 0,800 , sum_pl : 63,1 , max_pl : 19,3 , min_pl : 0,0\
+![Prediciton chart 83 days modell](testseries_1/0924/plt_24_09_24_d83a.png)
+![Prediciton chart 50 days modell](testseries_1/0924/plt_24_09_24_d50a_s.png)

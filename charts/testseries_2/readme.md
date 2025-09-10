@@ -45,5 +45,47 @@ Limit  , LO 67 , precision , 0,500 , sum_pl , 45,5 , max_pl , 20,3 , min_pl , -3
 ![Prediciton chart 50 days modell](1031/plt_24_10_31_d50b_s.png)
 
 Prediciton chart of 67 days modell (first chart) and 50 days model (second chart) on November 1, 2024\
+Limit  , HI 67 , precision , 0,800 , sum_pl , 75,5 , max_pl , 32,5 , min_pl , -5,0\
+Limit  , LO 67 , precision , 0,500 , sum_pl , 2,8 , max_pl , 7,6 , min_pl , -4,8\
 ![Prediciton chart 67 days modell](1101/plt_24_11_01_d67b.png)
 ![Prediciton chart 50 days modell](1101/plt_24_11_01_d50b_s.png)
+
+Prediciton chart of 67 days modell (first chart) and 50 days model (second chart) on November 4, 2024\
+Limit  , HI 67 , precision , 0,500 , sum_pl , 52,2 , max_pl , 38,2 , min_pl , -5,0\
+Limit  , LO 67 , precision , 0,500 , sum_pl , 13,9 , max_pl , 18,7 , min_pl , -13,0\
+![Prediciton chart 67 days modell](1104/plt_24_11_04_d67b.png)
+![Prediciton chart 50 days modell](1104/plt_24_11_04_d50b_s.png)
+
+Prediciton chart of 67 days modell (first chart) and 50 days model (second chart) on November 5, 2024\
+Limit  , HI 67 , precision , 0,400 , sum_pl , 34,3 , max_pl , 32,4 , min_pl , -5,2\
+Limit  , LO 67 , precision , 0,000 , sum_pl , -18,2 , max_pl , 0,5 , min_pl , -10,3\
+![Prediciton chart 67 days modell](1105/plt_24_11_05_d67b.png)
+![Prediciton chart 50 days modell](1105/plt_24_11_05_d50b_s.png)
+
+Prediciton chart of 67 days modell (first chart) and 50 days model (second chart) on November 11, 2024\
+Limit  , HI 67 , precision , 0,500 , sum_pl , 32,3 , max_pl , 22,6 , min_pl , -4,9\
+Limit  , LO 67 , precision , 0,333 , sum_pl , 9,5 , max_pl , 13,9 , min_pl , -5,0\
+![Prediciton chart 67 days modell](1111/plt_24_11_11_d67b.png)
+![Prediciton chart 50 days modell](1111/plt_24_11_11_d50b_s.png)
+
+Prediciton chart of 67 days modell (first chart) and 50 days model (second chart) on November 13, 2024\
+Limit  , HI 67 , precision , 0,500 , sum_pl , 24,8 , max_pl , 25,6 , min_pl , -12,6\
+Limit  , LO 67 , precision , 0,000 , sum_pl , -25,1 , max_pl , 0,0 , min_pl , -7,1\
+![Prediciton chart 67 days modell](1113/plt_24_11_13_d67b.png)
+![Prediciton chart 50 days modell](1113/plt_24_11_13_d50b_s.png)
+
+Prediciton chart of 67 days modell (first chart) and 50 days model (second chart) on November 15, 2024\
+Limit  , HI 67 , precision , 0,600 , sum_pl , 72,1 , max_pl , 37,5 , min_pl , -5,0\
+Limit  , LO 67 , precision , 0,750 , sum_pl , 111,1 , max_pl , 55,2 , min_pl , 0,0\
+![Prediciton chart 67 days modell](1115/plt_24_11_15_d67b.png)
+![Prediciton chart 50 days modell](1115/plt_24_11_15_d50b_s.png)
+
+Prediciton chart of 67 days modell (first chart) and 50 days model (second chart) on November 18, 2024\
+Limit  , HI 67 , precision , 0,400 , sum_pl , 68,2 , max_pl , 37,7 , min_pl , -2,2\
+Limit  , LO 67 , precision , 1,000 , sum_pl , 30,0 , max_pl , 23,2 , min_pl , 0,0\
+![Prediciton chart 67 days modell](1118/plt_24_11_18_d67b.png)
+![Prediciton chart 50 days modell](1118/plt_24_11_18_d50b_s.png)
+
+Prediciton chart of 67 days modell (first chart) and 50 days model (second chart) on November 20, 2024\
+![Prediciton chart 67 days modell](1120/plt_24_11_20_d67b.png)
+![Prediciton chart 50 days modell](1120/plt_24_11_20_d50b_s.png)

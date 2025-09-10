@@ -36,6 +36,6 @@ Limit  , LO 83 , precision : 0,800 , sum_pl : 63,1 , max_pl : 19,3 , min_pl : 0,
 
 #### [notebooks: Colab Jupyter notebooks for data preparation, training and backtesting with charts output](notebooks)
 
-#### [logs: Training logs documenting the progression of accuracy and loss](logs)
+#### [logs: Process logs e.g. training logs documenting the progression of accuracy and loss](logs)
 
 #### [data_example: Contains some data files that are used and build in the data preparation](data_example)
